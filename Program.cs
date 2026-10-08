@@ -3,7 +3,7 @@
 1 classe = 1 arquivo
 */
 
-//onjeto
+//objeto
 //Variavel
 //TIPO NOME
 using POO_Fundamentos;
@@ -32,14 +32,57 @@ Console.WriteLine(carroLegal);
 
 //Classe Pedido
 //NomeDoCliente, item, quantidad, preco
-
+/*
 Pedidio NovoPedido = new Pedidio();
-
-NovoPedido.Nome = "Samuel";
-NovoPedido.Item = "Salgados coxinhas, risolis, kibes e bolinho de queijo";
-NovoPedido.Quantidade = 200;
-NovoPedido.Preco = 89.49;
+Console.WriteLine("Digite o nome do cliente");
+NovoPedido.Nome = Console.ReadLine();
+Console.WriteLine("Dígite o item do pedido");
+NovoPedido.Item = Console.ReadLine();
+Console.WriteLine("Quantidade do pedido");
+NovoPedido.Quantidade = int.Parse(Console.ReadLine());
+Console.WriteLine("O preço do pedido");
+NovoPedido.Preco = double.Parse(Console.ReadLine());
 
 NovoPedido.InformacoesDoPedido();
 
 Console.WriteLine(NovoPedido);
+*/
+//Exercicios fundamentais
+//1. Pessoas
+/*
+Pessoa NovaPessoas = new Pessoa();
+Console.WriteLine("Dígite seu nome");
+NovaPessoas.Nome = Console.ReadLine();
+Console.WriteLine("Dígite sua idade");
+NovaPessoas.Idade = int.Parse(Console.ReadLine());
+
+NovaPessoas.Apresentacoes();
+
+Pessoa NovaPessoas2 = new Pessoa();
+Console.WriteLine("Dígite seu nome");
+NovaPessoas2.Nome = Console.ReadLine();
+Console.WriteLine("Dígite sua idade");
+NovaPessoas2.Idade = int.Parse(Console.ReadLine());
+
+NovaPessoas2.Apresentacoes();
+
+Console.WriteLine(NovaPessoas);
+Console.WriteLine(NovaPessoas2);
+*/
+//2. Retangulo
+Retangulo contaArea = new Retangulo();
+contaArea.Altura = 20;
+contaArea.Largura = 4;
+
+Retangulo contaPerimetro = new Retangulo();
+contaPerimetro.Altura = 10;
+contaPerimetro.Largura = 20;
+
+//Poderia-se  criar uma váriavel para demonstrar os resultados com outra alternativa
+Console.WriteLine(contaArea.CalcularArea());
+Console.WriteLine(contaPerimetro.CalcularPerimetro());
+
+//3. Lampada
+Lampada ExibirEstado = new Lampada();
+Lampada Ligar = new Lampada();
+Lampada Desligar = new Lampada();

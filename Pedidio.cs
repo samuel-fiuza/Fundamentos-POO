@@ -6,13 +6,13 @@ namespace POO_Fundamentos
 {
     public class Pedidio
     {
-        //atributos
+        //atributos - caracteristicas
         public string Nome;
         public string Item;
         public int Quantidade;
         public double Preco;
 
-        //metodo
+        //metodo - ações
         public void InformacoesDoPedido()
         {
             Console.WriteLine($"Nome: {Nome}\nItem: {Item}\nQuantidade: {Quantidade}\nPreco: {Preco}");
