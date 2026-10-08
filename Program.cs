@@ -68,7 +68,7 @@ NovaPessoas2.Apresentacoes();
 
 Console.WriteLine(NovaPessoas);
 Console.WriteLine(NovaPessoas2);
-*/
+
 //2. Retangulo
 Retangulo contaArea = new Retangulo();
 contaArea.Altura = 20;
@@ -84,5 +84,32 @@ Console.WriteLine(contaPerimetro.CalcularPerimetro());
 
 //3. Lampada
 Lampada ExibirEstado = new Lampada();
-Lampada Ligar = new Lampada();
+Console.WriteLine(ExibirEstado.Alternar());
 Lampada Desligar = new Lampada();
+Desligar.Desligar();
+Console.WriteLine(ExibirEstado.Alternar());
+Lampada Ligar = new Lampada();
+Ligar.Ligar();
+Console.WriteLine(ExibirEstado.Alternar());
+*/
+
+
+//Exercicios fundamentais Classes e Metodos
+//1. Saudações
+Pessoa2 Samuel = new Pessoa2();
+
+Samuel.Nome = "Samuel";
+
+Samuel.Cumprimentar();
+Samuel.CumprimentarAlguem("Bruno");
+
+string frase = Samuel.ObterApresentação();
+Console.WriteLine(frase);
+
+//2. Calculadora
+Calculadora calc = new Calculadora();
+int soma = calc.Somar(10, 5);
+calc.MostrarResultaos(soma);
+
+int sub = calc.Subtrair(30, 20);
+calc.MostrarResultaos(sub);

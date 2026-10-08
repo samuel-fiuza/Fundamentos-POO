@@ -22,7 +22,7 @@ namespace POO_Fundamentos
             {
                 Console.WriteLine("A Lampada está desligada");
             }
-            return (Ligada != true);
+            return (Ligada);
         }
         public void Desligar()
         {
