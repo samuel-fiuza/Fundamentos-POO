@@ -113,3 +113,19 @@ calc.MostrarResultaos(soma);
 
 int sub = calc.Subtrair(30, 20);
 calc.MostrarResultaos(sub);
+
+//3. Conversor de Temperatura
+ConversorTemp conv = new ConversorTemp ();
+
+double f = conv.CalcularCelciusParaFahrenheint(25);
+Console.WriteLine($"25C = {f}F");
+
+if (conv.EstaQuente(35))
+{
+    Console.WriteLine("35C: está quente!");
+} 
+
+if (!conv.EstaQuente(18))
+{
+    Console.WriteLine("18C: não está quente");
+}
